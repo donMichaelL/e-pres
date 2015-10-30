@@ -1,0 +1,7 @@
+1. Install the broker
+sudo apt-get install mosquitto
+2. Start Server
+mosquitto -p 1882
+2. Install lib
+pip install paho-mqtt
+3. Run progs
