@@ -1,5 +1,6 @@
 1. Install the broker
 sudo apt-get install mosquitto
+*your mosquitto version may not support websockets
 2. Start Server
 mosquitto -p 1882
 2. Install lib
