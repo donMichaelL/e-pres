@@ -8,3 +8,10 @@ Docker
 5. In Build Settings locate Dockerfile inside your repo
 
 Now every time you push, docker builds automatically the images
+
+Docker Server
+6. User docker-hook
+7. In deploy.sh specify IMAGE
+8. python docker-hook -t my-super-safe-token -c sh ./deploy.sh
+9. test it curl -X POST yourdomain.com:8555/my-super-safe-token
+10. If you have a public ip, in docker dashboard create a webhook using this ip
