@@ -1,0 +1,10 @@
+Git
+1. Create a git repo
+2. Insert a Dockerfile
+
+Docker
+3. Create an Automated Build
+4. Choose your git repo
+5. In Build Settings locate Dockerfile inside your repo
+
+Now every time you push, docker builds automatically the images
