@@ -6,7 +6,8 @@ Git
 Docker
 3. Create an Automated Build
 4. Choose your git repo
-5. In Build Settings locate Dockerfile inside your repo
+5. In Build Settings locate Dockerfile inside your repo, and edit all Name(master), Docker Location(/../), Tag(latest)
+6. Trigger the first Build
 
 Now every time you push, docker builds automatically the images
 
