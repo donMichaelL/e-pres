@@ -1,6 +1,7 @@
 Git
 1. Create a git repo
 2. Insert a Dockerfile
+3. Commit and push
 
 Docker
 3. Create an Automated Build
