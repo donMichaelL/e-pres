@@ -6,3 +6,15 @@ mosquitto -p 1882
 2. Install lib
 pip install paho-mqtt
 3. Run progs
+
+Installing mosquito server with web support
+
+step 1: install libwebsockets mosquitto 1.4 (WebSockets support)
+ - port 9001
+http://icanseedeadcats.com/tag/mosquitto/ 
+
+step 2: run mosquitto --> mosquitto -c /etc/mosquitto/mosquitto.conf
+
+step 3: open browser, and console
+
+step 4: run a publisher
