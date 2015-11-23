@@ -1,24 +1,34 @@
  <!DOCTYPE html>
 <html>
-<head>
- <meta charset="utf-8">
-<title>Mqtt Client</title>
-
-</head>
-<body>
-
-	<h1>This is a Heading</h1>
-	<p>This is a paragraph.</p>
-	<button class="pure-button btn-connect">connect</button>
- 	<button class="pure-button btn-subscribe">subscribe</button>
-
-	<div class="messages"></div>
-	</div>
-
-	<script src="javascript/assets/mqttws31.js"></script>
-	<script src="javascript/config.js"></script>
-	<script src="javascript/main.js"></script>
+	<head>
+		<meta charset="utf-8">
+		<title>Mqtt Client</title>
 
 
-</body>
+
+	</head>
+	<body>
+
+		<h1>Progress</h1>
+		<img src="http://s23.postimg.org/jxj38y5ln/architecture.jpg" />
+<!-- 		<button class="pure-button btn-connect">connect</button>
+	 	<button class="pure-button btn-subscribe">subscribe</button> -->
+
+		<h1>Demo</h1>
+	 	<div id="chartContainer" style="width:100%; height:280px"></div>  
+<!--		<button id="addDataPoint">Add Data Point</button>  
+		<button id="updateDataPoint">Update Data Point</button>  -->
+
+
+		<script type="text/javascript" src="javascript/graph.js"></script>
+
+		<script type="text/javascript" src="http://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="http://canvasjs.com/assets/script/canvasjs.min.js"></script> 
+		<script src="javascript/assets/mqttws31.js"></script>
+		<script src="javascript/config.js"></script>
+		<script src="javascript/main.js"></script>
+
+
+
+	</body>
 </html> 

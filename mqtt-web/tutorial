@@ -1,10 +1,6 @@
-step 1: install libwebsockets mosquitto 1.4 (WebSockets support)
- - port 9001
-http://icanseedeadcats.com/tag/mosquitto/ 
+Copy and Paste the files.
+Open in browser index_mqtt_client.html
 
-step 2: run mosquitto --> mosquitto -c /etc/mosquitto/mosquitto.conf
+javascript/config.js -> configurations for ip of mosquitto server + port + topic
 
-step 3: open browser, and console
-
-step 4: run a publisher
 

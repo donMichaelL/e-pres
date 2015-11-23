@@ -1,5 +1,20 @@
 (function() {
 
+
+		var chart = new CanvasJS.Chart("chartContainer", { 
+		title: {
+			text: "Adding & Updating dataPoints"
+		},
+		data: [
+		{
+			type: "spline",
+			dataPoints: [
+			]
+		}
+		]
+	});
+	chart.render();	
+
 	// var btnConnect = document.querySelector('.btn-connect');
 	// var btnSubscribe = document.querySelector('.btn-subscribe');
 	// var messages = document.querySelector('.messages');
@@ -42,7 +57,7 @@ function onConnect() {
   // Once a connection has been made, make a subscription and send a message.
   console.log("onConnect");
   client.subscribe(topic);
-  message = new Paho.MQTT.Message("The Test message send by HTTP");
+  message = new Paho.MQTT.Message("The Test message  15 send by HTTP");
   message.destinationName = "World";
   client.send(message); 
 }
@@ -57,6 +72,28 @@ function onConnectionLost(responseObject) {
 // called when a message arrives
 function onMessageArrived(message) {
   console.log("onMessageArrived: <<"+message.payloadString +">> with topic--> " + message.destinationName);
+  var number = message.payloadString.match(/\d+/)[0];
+  console.log(number);
+  if(number != null)
+  	updateGraph(parseInt(number));
 }
+
+
+
+				function updateGraph(new_value){
+					console.log(new_value);
+					var length = chart.options.data[0].dataPoints.length;
+					chart.options.title.text = "New DataPoint Added at the end";
+					chart.options.data[0].dataPoints.push({ y: new_value});
+					chart.render();
+				};
+
+
+
+
+
+
+
+
 
  })();
