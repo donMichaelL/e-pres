@@ -17,5 +17,9 @@ https://www.eclipse.org/paho/clients/js/</p>
 
 <h2>docker-rpi</h2>
 <p>Dockerfile for runnning a python prorgam for Raspberry</p>
+<p>The sample is a mqtt producer for a mqtt server inside raspberry</p>
+<p>In a container we run mosquitto MQTT broker (with websocket support) on Raspberry Pi</p>
+<p>https://hub.docker.com/r/pascaldevink/rpi-mosquitto/</p>
+<p>https://github.com/pascaldevink/rpi-mosquitto</p>
 
 
