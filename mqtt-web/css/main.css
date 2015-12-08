@@ -1,0 +1,27 @@
+img {
+	/*border: 2px solid transparent;
+	border-color: lightgrey;*/
+	padding: 5px;
+}
+
+.image { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+
+.map > span { 
+	position: absolute; 
+/*	font-size: 20px;
+	background-color: aqua;
+	width: 25px;
+	text-align: center;
+	border-radius: 20px;*/
+}
+
+.alert {
+	background-color: red;
+}
+
+.slct {
+	background-color: lightgreen !important;
+}
