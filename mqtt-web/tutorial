@@ -4,3 +4,6 @@ Open in browser index_mqtt_client.html
 javascript/config.js -> configurations for ip of mosquitto server + port + topic
 
 javascript/main1.js -> in constructor Paho.MQTT.Client, the 3rd argument is the cliend id and must be diffent for every client
+
+Topic is the antena id
+Message is a string with a number, the number is the flux
